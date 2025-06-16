@@ -1,0 +1,1182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#side-nav-container{
+   display:flex;
+   position:fixed;
+   right:-100vw;
+   width: 100vw;
+   height: 100vh;
+   z-index: 3000;
+   background-color: #daa5206f;
+   transition: .5s right ease-in-out;
+}
+
+.side-nav{
+   position: absolute;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   top: 0;
+   right:0;
+   width: 300px;
+   height: 100vh;
+   padding-top: 20px;
+   background-color: #825e03;
+}
+.side-nav-list{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   padding-bottom: 64px;
+   position: absolute;
+}
+
+.side-nav-list li a{
+   color: #fff;
+}
+
+.side-nav-list li a:hover{
+   color:#dfdddd;
+}
+
+
+.side-nav-btn{
+   position: absolute;
+   top: 75vh;
+   width: 50%;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   background-color:#e1a307;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+}
+
+.side-nav-btn:hover{
+   background-color: transparent;
+   border: 2px solid #fff;
+}
+
+.side-nav-btn a{
+   text-decoration: none;
+   font-size: 16px;
+   color:#fff;
+}
+
+
+.fa.fa-close{
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   top: 16px;
+   right: 16px;
+   transition: .3s ease-in-out;
+   color: #fff;
+   cursor: pointer;
+   background-color:goldenrod;
+}
+
+.fa.fa-close:hover{
+   background-color:transparent;
+   color: #fff;
+   border: 2px solid #fff;
+}
+
+.shop, #shop{
+   position:absolute;
+   top: 85%;
+   transition: .3s ease-in-out;
+}
+
+#shop{
+   left: 40%;
+   
+}
+
+.shop a{
+   color: goldenrod;
+}
+
+.shop a:hover, #shop:hover{
+   color: #fff;
+}
+
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    height: 45px;
+}
+
+.nav-list{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:8px;
+    gap: 5px;
+}
+
+ .nav-items{
+    list-style-type: none;
+    
+ }
+
+ .nav-items a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: goldenrod;
+    transition: .3s ease-in-out;
+ }
+
+.nav-items a:hover{
+    color: gold;
+}
+
+ .nav-btn{
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+    background-color: goldenrod;
+ }
+
+ .nav-btn a{
+    text-decoration:none ;
+    color:black;
+ }
+
+ .nav-btn:hover{
+    background-color: gold;
+    
+ }
+
+ .mobile-screen-icons{
+    height: 64px;
+    width: 128px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .fa.fa-shopping-cart,
+ .fa.fa-bars{
+  font-size: 35px;
+  color: goldenrod;
+  transition: .3s ease-in-out;
+ }
+
+ .fa.fa-shopping-cart:hover,
+ .fa.fa-bars:hover{
+  color: gold;
+ }
+
+ .zero-dollar a{
+    color: goldenrod;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+ }
+
+ .zero-dollar a:hover{
+  color: gold;
+ }
+
+ #home{
+    /* width: 100%; */
+    min-height: 300px;
+    background-image:url(./BingWallpaper\ \(1\).jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 23px;
+    
+ }
+
+ .home-text, .paragraph-text{
+    color: #fff;
+ }
+
+ .paragraph-text{
+    margin-top: 120px;
+    padding-bottom: 120px;
+ }
+
+ .free-resources-btn, .explore-courses-btn{
+    height: 34px;
+    width: 170px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+   
+    padding-bottom: -200px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+ }
+
+ .free-resources-btn a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .explore-courses-btn a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .free-resources-btn{
+    background-color: goldenrod;
+ }
+
+ .free-resources-btn:hover{
+    background-color:gold;
+ }
+
+ .explore-courses-btn{
+    background-color: red;
+    margin-left: 64px;
+ }
+
+ .explore-courses-btn:hover{
+    background-color: rgb(247, 51, 51);
+ }
+
+ .home-footer{
+    min-height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: -100px;
+    margin-bottom: -34px;
+ }
+
+ .home-footer-icons{
+    height: 4.7rem;
+    /* width: 12.5rem; */
+    margin-right: -30px;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+ }
+
+ .laskill-web-address{
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    margin-bottom: -180px;
+ }
+
+ .laskill-web-address:hover{
+    color: gold;
+    text-decoration: underline;
+ }
+
+ .fa-facebook,
+ .fa-instagram,
+ .fa-telegram,
+ .fa-envelope{
+   width: 30px;
+   height: 30px;
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   text-align: center;
+   padding: 1.55%;
+   font-size: 2rem;
+   background-color:#d0c5c5;
+   border-radius: 50%;
+   transition: .3s ease-in-out;
+  
+   cursor: pointer;
+   
+ }
+
+ .fa.fa-facebook:hover,
+ .fa.fa-instagram:hover,
+ .fa.fa-telegram:hover,
+ .fa.fa-envelope:hover{
+   transform: scale(1.2);
+   background-color: gold;
+   border: 1px solid black;
+ }
+
+
+
+ .laskill-training-center a{
+    color: #d0c5c5;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    
+ }
+
+ .laskill-training-center a:hover{
+    color: gold;
+    text-decoration: underline;
+ }
+
+ #statistics{
+    height: 15.5rem;
+    background-color:goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-bottom-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.5rem;
+ }
+
+ .trained-individuals,
+ .underserved-areas,
+ .resources{
+    height: 5rem;
+    width: 12rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .over25k,
+ .percentage,
+ .over13k{
+    font-size: 2.5rem;
+ }
+
+ .percentage{
+    margin-left: 2.25rem;
+ }
+
+ #middle-nav{
+    /* width: 100%; */
+    height: 5rem;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+    position: sticky;
+    top: 50vh;
+    z-index: 1000;
+ }
+
+ .mid-way-logo{
+   color: #fff;
+ }
+
+ .mid-way-icons{
+   height: 100%;
+   width: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: .5rem;
+ }
+
+ .mid-way-zero-dollar{
+   color: #fff;
+   font-size: 1.4rem;
+   cursor: pointer;
+ }
+
+ #the-vision{
+   display: flex;
+   min-height: 100px;
+ }
+
+ .image{
+   padding-top: 75px;
+   margin-top: 80px;
+   padding-left: 8px;
+   width: 60%;
+   
+ }
+
+ .vision-statement{
+   border-left: 2px solid goldenrod;
+   padding: 12px;
+   margin-top: 24px;
+   position: relative;
+ }
+
+ .arrow-up{
+   position:absolute;
+   top: 100px;
+   right: 10%;
+   z-index: 100;
+   width: 32px;
+   height: 32px;
+   background-color: goldenrod;
+   color: #fff;
+   font-size: 24px;
+   cursor: pointer;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 3px;
+ }
+
+ .section-image{
+   height: 300px;
+   width:100%;
+   padding-right:8px;
+   padding: 50px;
+   display: block;
+ }
+
+ .section-button{
+   width:100%;
+   height: 42px;
+   border: none;
+   background-color: goldenrod;
+   font-size: 1rem;
+   color: #fff;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+ }
+
+ .section-button:hover{
+   background-color: gold;
+ }
+
+ .continue-reading{
+   margin-top: 12px;
+   margin-bottom: 12px;
+   text-align: center;
+   padding-left: 16px;
+ }
+
+ .charles-profile{
+   padding-left: 16px;
+   text-align: center;
+ }
+
+ #why-choose-laskill{
+   background-image:url(./bg-Polynesia.jpg);
+   min-height: 600px;
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 64px;
+   margin-bottom: 25px;
+ }
+
+ .why-choose-header{
+   color: #fff;
+ }
+
+ h2{
+   padding-top: 20px;
+ }
+
+ h2 > span{
+   color: goldenrod;
+ }
+
+ .key-words{
+   width: 90%;
+   min-height: 100px;
+   border: 2px solid goldenrod;
+   border-radius: 10px;
+   background: transparent;
+   -webkit-backdrop-filter: blur(50px);
+   backdrop-filter:blur(50px);
+   margin-top: 42px;
+   margin-bottom: 25px;
+   padding: 20px;
+   color: #fff;
+ }
+
+ .send-mail-btn{
+   margin-top: 25px;
+   width: 150px;
+   text-align: center;
+   background-color: goldenrod;
+   color: #fff;
+   font-weight: bold;
+   border: none;border-radius: 5px;
+   cursor: pointer;
+   padding-bottom: 10px ;
+   transition: .3s ease-in-out;
+ }
+
+ .send-mail-btn:hover{
+   background-color: gold;
+ }
+
+ .key-word-email{
+   background: transparent;
+   color: #fff;
+   font-size: 32px;
+ }
+
+ #insight-career-path{
+   padding: 20px;
+   font-size: 1.5rem;
+ }
+
+ .discover{
+   padding-top: 20px;
+   font-size:large;
+ }
+
+ .most-recent-text, .how-to-build-portofolio{
+   font-size: large;
+ }
+
+ .most-recent-text{
+   background-color: goldenrod;
+   color: #fff;
+   padding: 10px;
+   width: 180px;
+ }
+
+ .span-div{
+   display: flex;
+   gap: 5px;
+ }
+
+ .span-arrow{
+   background-color: goldenrod;
+   text-align: center;
+   color: #fff;
+   height: 40px;
+   width: 40px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+ }
+
+ .span-arrow:hover{
+   background-color: gold;
+ }
+
+ .most-recent{
+   display: flex;
+   padding-top: 40px;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .cards-container{
+   margin-top: 64px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+ }
+
+ .card-image{
+   max-height: 200px;
+   display: block;
+   max-width: 100%;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+ }
+
+ .card{
+   max-width: 322px;
+   min-height: 400px;
+   position: relative;
+ }
+
+.job-interview-questions a{
+  color: black;
+   text-decoration: none;
+}
+.job-interview-questions a:hover{
+   text-decoration: underline;
+}
+
+
+.training{
+   font-size: 8px;
+}
+
+ 
+
+
+
+.card-link p{
+   text-decoration: none;
+}
+
+.random-text{
+   font-size: 8px;
+   color: #fff;
+}
+
+ .overlap-text{
+   font-size: 12px;
+   color: #fff;
+ }
+
+ .freelance-overlap{
+   color: goldenrod;
+ }
+
+
+ .card-text{
+   padding-left: 10px;
+   padding-top: 30px;
+ }
+
+ .job-interview-questions{
+   font-size: 18px;
+ }
+
+ .user-charles{
+   display: flex;
+   gap:10px;
+   margin-top: 20px;
+ }
+
+ .fa-user{
+   color: rgb(103, 103, 103);
+ }
+
+.charles-izuoba{
+   color: grey;
+   font-size: 16px;
+ }
+
+ .footer{
+   width: 100%;
+   min-height: 84px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   padding-bottom: 43px;
+ }
+
+ 
+ .div-webinar{
+   width: 100%;
+   display: flex;
+   gap: 10px;
+ }
+
+ .div-webinar > a{
+   color: goldenrod;
+   text-decoration: none;
+   transition: .3s ease-in-out;
+ }
+
+ .div-webinar > a:hover{
+   color: gold;
+   text-decoration: underline;
+ }
+
+ .footer-up{
+   width: 100%;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 10px;
+   padding: 20px;
+ }
+
+ .divider{
+   background-color: black;
+   width: 2px;
+   height: 20px;
+  
+ }
+
+ .footer-icon-container{
+   display: flex;
+   gap:10px;
+ }
+
+ .footer-icon-container > .fa.fa-facebook,
+ .footer-icon-container > .fa.fa-play,
+ .footer-icon-container > .fa.fa-instagram,
+ .footer-icon-container > .fa.fa-tiktok,
+ .footer-icon-container > .fa.fa-linkedin{
+   background-color: black;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   font-size:20px;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .copy-right{
+   height: 200px;
+   background-color: #2e2d2d;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   gap: 5px;
+   position: relative;
+   margin-bottom: -45px;
+ }
+
+ .copy-right > p{
+   color: #fff;
+ }
+
+ .copyright-hr{
+   height: 16px;
+   width: 1px;
+   border: none;
+   background-color: goldenrod;
+   margin-top: 5px;
+ }
+
+ .fa.fa-arrow-up{
+   width: 35px;
+   height:35px;
+   background-color:goldenrod;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   right: 40px;
+   top: 70%;
+ }
+
+ .fa.fa-whatsapp{
+   position: absolute;
+   left:40px;
+   top:70%;
+   width:35px;
+   height: 35px;
+   border-radius: 50%;
+   font-size: 20px;
+   cursor: pointer;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #29d303;
+ }
+ 
+ @media(max-width:430px){
+
+   .home-text{
+      font-size: 25px;
+   }
+
+   .overlapping-logo-container{
+      bottom: 50%;
+      font-size: 18px;
+   }
+
+   .most-recent{
+      display: flex;
+      padding-top: 40px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: auto;
+    }
+
+    .free-resources-btn, .explore-courses-btn{
+      font-size: 10px;
+      padding: 5px;
+      width: auto;
+    }
+
+    .laskill-web-address{
+      font-size: 12px;
+      padding-top: 100px;
+    }
+
+    .home-footer-icons{
+      min-height: 4.7rem;
+      margin-right: -10px;
+      margin-top: 180px;
+      display: grid;
+      place-items: center;
+      place-content: center;
+      gap: 8px;
+     ;
+   }
+
+   .home-footer{
+      min-height: 300px;
+      width: 100%;
+      display:flex ;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: -100px;
+      padding-bottom:50px ;
+   }
+
+   .laskill-training-center a{
+      font-size: 12px;
+   }
+
+   .why-choose-header{
+      padding: 15px;
+      font-size: 25px;
+   }
+
+   .insights{
+font-size: 25px;
+   }
+
+   .most-recent-text{
+      font-size: 8px;
+      padding: 5px;
+   }
+   
+
+ }
+
+ @media(max-width:540px){
+   .home-text{
+      font-size: 25px;
+   }
+
+   .overlapping-logo-container{
+      bottom: 43%;
+      font-size: 18px;
+   }
+
+   .most-recent{
+      display: flex;
+      padding-top: 40px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: auto;
+    }
+
+    .free-resources-btn, .explore-courses-btn{
+      font-size: 10px;
+      padding: 5px;
+      width: auto;
+    }
+
+    .laskill-web-address{
+      font-size: 12px;
+      padding-top: 100px;
+      margin-top: 25px;
+    }
+
+    .home-footer-icons{
+      min-height: 4.7rem;
+      margin-right: -10px;
+      margin-bottom: 8%;
+      display: grid;
+      place-items: center;
+      place-content: center;
+      gap: 8px;
+   }
+
+   .x, .y, .z, .u, .v{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+   }
+
+   .home-footer{
+      min-height: 300px;
+      width: 100%;
+      display:flex ;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: -100px;
+      padding-bottom:50px ;
+   }
+
+   .laskill-training-center a{
+      font-size: 12px;
+   }
+
+   .why-choose-header{
+      padding: 15px;
+      font-size: 25px;
+   }
+
+   .insights{
+font-size: 25px;
+   }
+
+   .most-recent-text{
+      font-size: 8px;
+      padding: 5px;
+   }
+
+ }
+ 
+
+
+ @media(max-width:640px){
+
+   .logo{
+      height: 30px;
+   }
+
+   .fa.fa-bars, .fa.fa-shopping-cart{
+      font-size: 20px;
+   }
+
+   .cards-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+   }
+
+   #the-vision{
+      display: grid;
+   }
+
+   .vision-statement{
+      border-left: none;
+   }
+
+   #statistics{
+      display: grid;
+      place-content: center;
+   }
+
+  .over25k,
+ .percentage,
+ .over13k{
+    font-size: 1.8rem;
+    font-weight:bolder;
+ }
+
+ .home-footer-icons{
+   display: grid;
+   background-color: none;
+   
+ }
+
+ .fa.fa-facebook,
+ .fa.fa-instagram,
+ .fa.fa-telegram,
+ .fa.fa-envelope{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 16px;
+    width: 16px;
+ }
+
+ .image{
+   /* padding-top: 75px; */
+   /* margin-top: 80px; */
+   margin: auto;
+   height: 100;
+   /* padding-left: 8px; */
+   
+ }
+
+ .most-recent-text{
+   font-size: 12px;
+   padding: 4px;
+  width: 90px;
+ }
+
+ .how-to-build-portofolio{
+   font-size: 12px;
+
+ }
+
+ .span-arrow{
+   font-size: 14px;
+   height: 20px;
+   width: 20px;
+ }
+
+ .copy-right{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 150px;
+ }
+
+ 
+
+ }
+
+
+ @media(max-width:780px){
+   .home-text{
+      font-size: 25px;
+   }
+
+   .section-image{
+      height: 300px;
+   }
+   
+   .cards-container{
+      display: gr;
+   }
+
+   .overlapping-logo-container{
+      bottom: 43%;
+      font-size: 18px;
+   }
+
+   .most-recent{
+      display: flex;
+      padding-top: 40px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: auto;
+    }
+
+    .free-resources-btn, .explore-courses-btn{
+      font-size: 10px;
+      padding: 5px;
+      width: auto;
+    }
+
+    .laskill-web-address{
+      font-size: 12px;
+      padding-top: 100px;
+    }
+
+    .home-footer-icons{
+      min-height: 4.7rem;
+      margin-right: -10px;
+      margin-top: 180px;
+      display: grid;
+      place-items: center;
+      place-content: center;
+      gap: 8px;
+     ;
+   }
+
+   .fa.fa-facebook,
+ .fa.fa-instagram,
+ .fa.fa-telegram,
+ .fa.fa-envelope{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+ }
+
+   .home-footer{
+      min-height: 300px;
+      width: 100%;
+      display:flex ;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: -100px;
+      padding-bottom:50px ;
+   }
+
+   .laskill-training-center a{
+      font-size: 12px;
+   }
+
+   .why-choose-header{
+      padding: 15px;
+      font-size: 25px;
+   }
+
+   .insights{
+font-size: 25px;
+   }
+
+   .most-recent-text{
+      font-size: 8px;
+      padding: 5px;
+   }
+   
+   
+
+ }
+ 
+
+ @media(min-width:921px){
+   .mobile-screen-icons{
+       display: none;
+   }
+
+   .home-text{
+       font-size: 4rem;
+   }
+
+   .paragraph-text{
+       font-size: 1.5rem;
+   }
+
+   .cards-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+   }
+
+   .home-footer-icons{
+      padding-right: 40px;
+   }
+}
+
+
+@media(max-width:920px){
+   .nav-list{
+       display: none;
+   }
+
+   .nav-btn{
+       display: none;
+   }
+
+   .mobile-screen-icons{
+       height: 4rem;
+       width: 8rem;
+       display:flex;
+       align-items:center;
+       justify-content: center;
+       gap: 0.6rem;
+    }
+}
+
+ 
