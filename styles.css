@@ -18,8 +18,12 @@ body{
    width: 100vw;
    height: 100vh;
    z-index: 3000;
-   background-color: #daa5206f;
+   background-color:#0000003f;
    transition: .5s right ease-in-out;
+}
+
+.fa.fa-shopping-cart{
+   cursor: pointer;
 }
 
 .side-nav{
@@ -32,15 +36,26 @@ body{
    width: 300px;
    height: 100vh;
    padding-top: 20px;
-   background-color: #825e03;
+   background-color:#000000f1;
 }
+
+.side-nav-hr{
+   /* width:300px;  */
+}
+
+.logo-white-side-nav{
+   height: 30px;
+}
+
 .side-nav-list{
+   overflow: auto;
    height: 100%;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   /* justify-content: center; */
    gap: 10px;
    padding-bottom: 64px;
+   padding-top: 64px;
    position: absolute;
 }
 
@@ -135,6 +150,13 @@ body{
     height: 45px;
 }
 
+.logo.white{
+   height: 45px;
+   position: absolute;
+   left: 3%;
+   top: 25%;
+}
+
 .nav-list{
     color: #fff;
     display: flex;
@@ -151,7 +173,7 @@ body{
 
  .nav-items a{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 15px;
     color: goldenrod;
     transition: .3s ease-in-out;
  }
@@ -397,7 +419,7 @@ body{
  }
 
  .mid-way-logo{
-   color: #fff;
+   height: 45px;
  }
 
  .mid-way-icons{
@@ -453,7 +475,7 @@ body{
 
  .section-image{
    height: 300px;
-   width:100%;
+   
    padding-right:8px;
    padding: 50px;
    display: block;
@@ -527,14 +549,17 @@ body{
 
  .send-mail-btn{
    margin-top: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 150px;
+   height: 45px;
    text-align: center;
    background-color: goldenrod;
    color: #fff;
    font-weight: bold;
    border: none;border-radius: 5px;
    cursor: pointer;
-   padding-bottom: 10px ;
    transition: .3s ease-in-out;
  }
 
@@ -951,12 +976,18 @@ font-size: 25px;
 
  @media(max-width:640px){
 
-   .logo{
-      height: 30px;
+   .logo.white{
+      height: 40px;
    }
 
+
+
    .fa.fa-bars, .fa.fa-shopping-cart{
-      font-size: 20px;
+      font-size: 25px;
+   }
+
+   .zero-dollar{
+      font-size: 25px;
    }
 
    .cards-container{
@@ -1037,12 +1068,33 @@ font-size: 25px;
    height: 150px;
  }
 
- 
+ .mid-way-logo{
+   height: 30px;
+ }
 
  }
 
 
  @media(max-width:780px){
+
+   .nav-bar{
+      background-color: black;
+   }
+
+   #middle-nav{
+      display: none;
+   }
+
+   .logo{
+      display:none;
+   }
+
+   .logo.white{
+      display: flex;
+   }
+
+   
+
    .home-text{
       font-size: 25px;
    }
@@ -1137,6 +1189,15 @@ font-size: 25px;
  
 
  @media(min-width:921px){
+
+   .mid-way-logo{
+      /* display: none; */
+   }
+
+   .logo.white{
+      display: none;
+   }
+
    .mobile-screen-icons{
        display: none;
    }
@@ -1161,6 +1222,23 @@ font-size: 25px;
 
 
 @media(max-width:920px){
+
+    .nav-bar{
+      background-color: black;
+   }
+
+   #middle-nav{
+      display: none;
+   }
+
+   .logo{
+      display:none;
+   }
+
+   .logo.white{
+      display:flex ;
+   }
+
    .nav-list{
        display: none;
    }
@@ -1176,6 +1254,11 @@ font-size: 25px;
        align-items:center;
        justify-content: center;
        gap: 0.6rem;
+    }
+
+
+    .fa.fa-shopping-cart{
+      color:#fff;
     }
 }
 
